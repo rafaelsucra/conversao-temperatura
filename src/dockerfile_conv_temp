@@ -1,0 +1,9 @@
+FROM node
+WORKDIR /app
+#copia para o local do raiz
+COPY package*.json ./
+RUN npm install
+#todos outros arquivos
+COPY . .
+EXPOSE 8080
+CMD ["node","server.js"]
