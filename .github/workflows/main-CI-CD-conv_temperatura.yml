@@ -22,7 +22,7 @@ jobs:
         uses: docker/build-push-action@v2.7.0
         with:
           context: ./src
-          file: ./src/dockerfile
+          file: ./src/dockerfile_conv_temp
           push: true
           tags: |
             rafaelsucra/conversao-temperatura:latest
